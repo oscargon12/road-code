@@ -172,3 +172,56 @@ age++ // 41
 age +=2 // 42
 
 
+console.log('Condicionales')
+// === Condicionales===
+
+// == if ==
+
+let age2 = 18;
+
+if(age2 === 18){
+    console.log('Puedes votar por primera vez');
+} else if (age2 > 18){
+    console.log('Vuelve a votar');
+} else {
+    console.log('NO puedes votar');
+}
+
+
+// == Operdor ternario ==
+// condicion 
+// ? true 
+// : false
+
+// Ejemplo
+let num1 = 1;
+
+num1 === 1
+? 'Si soy un 1'
+: 'No lo soy'
+
+
+// Ejercicio
+
+/* Piedra papel o tijera
+Generar variables piedra, papel o tijera
+Generar logica de validación
+Encapsular logica en una funcion */
+
+let opt1 = 'stone',
+    opt2 = 'paper',
+    opt3 = 'scissor';
+
+const juego = (user, cpu) => {
+    if ( user === opt1 && cpu === opt3 ){
+        console.log(`El usuario gana con ${opt1}`);
+    } else if(user === opt2 && cpu === opt1){
+        console.log(`El usuario gana con ${opt2}`);
+    } else if(user === opt3 && cpu === opt2){
+        console.log(`El usuario gana con ${opt3}`);
+    } else {
+        console.log('Gana la máquina');
+    }
+}
+    
+juego(opt1, opt3);
