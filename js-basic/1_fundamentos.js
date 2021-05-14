@@ -461,3 +461,31 @@ const articulosFiltrados = articulos.filter( function(articulo){ // Esta sintaxi
 const nombreArticulos = articulos.map( function(articulo){ // Esta sintaxis de funcion se aplica el metodo filter
     return articulo.nombre
 });
+
+/* El método find () devuelve el primer valor que coincide de la colección. 
+Una vez que coincida con el valor en los resultados, no verificará los valores
+restantes en la colección de matriz. El método filter () devuelve los valores
+coincidentes en una matriz de la colección */
+
+// === Find ===
+// Va a buscar algo que esté dentro del array y va a generar un nuevo array con el resultado
+const encuentraArticulos = articulos.find( function(articulo){ // Creo el parámetro artículo para usarlo dentro de articulos
+    return articulo.nombre === 'Laptop'
+});
+
+encuentraArticulos
+
+
+// === for each ===
+// Recorre el array
+articulos.forEach(function(articulo){ // El parametro de la función es un articulo de articulos
+    console.log(articulo.nombre);
+});
+
+
+// === Some ===
+// Este devuelve truo o false, no los resultados específicos
+
+const articulosBaratos = articulos.some( function(articulo){
+    return articulo.costo <= 700
+});
