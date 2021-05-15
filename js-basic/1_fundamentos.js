@@ -457,7 +457,7 @@ const articulosFiltrados = articulos.filter( function(articulo){ // Esta sintaxi
 });
 
 // === Map ===
-// Genera un nuevo array
+// Genera un nuevo array con solo el valor de la propiedad nombre, de los artículos
 const nombreArticulos = articulos.map( function(articulo){ // Esta sintaxis de funcion se aplica el metodo filter
     return articulo.nombre
 });
