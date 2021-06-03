@@ -62,18 +62,12 @@ const pollo = {
     country: 'CO'
 }
 
-const pollo2 = {
-    name: 'Sebas',
-    age: 29,
-    country: 'CO'
-}
-
 // Antes
 //console.log(pollo.name, pollo.age)
 
 // ES6
 let {name, age, country} = objeto;
-let {name, age, country} = objeto2;
+
 console.log(name, age, country);
 
 // Que pasa si quiero imprimir en consola los elementos de 2 onjetos diferentes
