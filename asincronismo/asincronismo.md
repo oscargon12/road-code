@@ -42,3 +42,12 @@ npm run callback
 Que es el nombre del script
 
 ## Creando callbacks
+Descargar postman
+
+Se instala la dependencia http request
+
+```
+npm install xmlhttprequest --save
+```
+
+Lo demás está en el archivo challenge.js
