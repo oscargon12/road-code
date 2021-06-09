@@ -19,7 +19,7 @@ somethingWillHappen()
 
 const somethingWillHappen2 = () =>{
     return new Promise((resolve, reject) => {
-       if (true) {
+       if (false) {
            setTimeout(() => {
                resolve('True');
            }, 3000)
@@ -34,3 +34,14 @@ const somethingWillHappen2 = () =>{
 somethingWillHappen2()
     .then(response => console.log(response)) //
     .catch(err => console.log(err)); // Como vasmos a controlar el error
+
+
+// Correr varias promesas al mismo tiempo Promise.All
+Promise.all([somethingWillHappen(), somethingWillHappen2])
+    .then(response =>{
+        console.log('Array of results', response);
+    })
+
+    .catch(err =>{
+        console.error(err);
+    })
