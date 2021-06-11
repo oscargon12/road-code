@@ -33,7 +33,7 @@ const somethingWillHappen2 = () =>{
 //Ejecutando la función
 somethingWillHappen2()
     .then(response => console.log(response)) //
-    .catch(err => console.log(err)); // Como vasmos a controlar el error
+    .catch(err => console.log(err)); // Como vamos a controlar el error
 
 
 // Correr varias promesas al mismo tiempo Promise.All
