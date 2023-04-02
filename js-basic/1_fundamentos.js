@@ -104,12 +104,12 @@ console.log(typeof coer1); // Imprime '47' como string
 // Coersión explicita
 // El cambio de tipo de dato, se hace de manera obligada
 
-let a = '20';
+let a = 20;
 let b = a + '';
 
 typeof b; // 'string'
 
-let c = String(a);
+let c = String(a); //Metodo de coersión explicita
 
 console.log(c);
 
@@ -136,6 +136,7 @@ Boolean();
 // 1 ... : true - cualquier número diferente de 0, hasta negativos
 // {} : true - objeto vacío
 // [] : true - true vacío
+// 
 
 console.clear()
 console.log('operadores')
